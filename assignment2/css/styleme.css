@@ -1,0 +1,40 @@
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: rgb(89, 86, 71);
+    color: white;
+}
+
+img {
+    height: 50%;
+    width: 50%;
+}
+
+#about-me {
+    font-size: 4em;
+}
+
+.inline {
+    color: yellow;
+}
+
+.title {
+    color: rgb(155, 195, 253);
+}
+
+div > h1 {
+    font-size: 2em;
+}
+
+#moods {
+    width: 50%;
+}
+
+#mood {
+    float: left;
+    width: 50%;
+    
+}
+
+#neighbors {
+    margin-top: 287px;
+}
