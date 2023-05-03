@@ -38,3 +38,11 @@ div > h1 {
 #neighbors {
     margin-top: 287px;
 }
+
+.validators {
+    margin: 50px auto auto auto;
+    display: flex;
+    flex-direction: row;
+    height: 150px;
+    width: 520px;
+}
