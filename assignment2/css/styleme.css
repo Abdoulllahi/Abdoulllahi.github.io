@@ -1,3 +1,11 @@
+/**
+ * @ Author: Abdou Lahi DIOP
+ * @ Create Time: 2023-05-02 13:41:25
+ * @ Modified by: Abdou Lahi DIOP
+ * @ Modified time: 2023-05-04 06:45:07
+ * @ Description:
+ */
+
 body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: rgb(89, 86, 71);
@@ -9,20 +17,34 @@ img {
     width: 50%;
 }
 
+a {
+    color: red;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+p::first-letter {
+    font-size: 1.5em;
+}
+
+div>h1 {
+    font-size: 2em;
+}
+
 #about-me {
     font-size: 4em;
 }
 
-.inline {
+.inline,
+dt {
     color: yellow;
 }
 
 .title {
     color: rgb(155, 195, 253);
-}
-
-div > h1 {
-    font-size: 2em;
 }
 
 #moods {
@@ -32,7 +54,7 @@ div > h1 {
 #mood {
     float: left;
     width: 50%;
-    
+
 }
 
 #neighbors {
