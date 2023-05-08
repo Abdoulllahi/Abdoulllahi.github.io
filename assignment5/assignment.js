@@ -100,14 +100,13 @@ function functionalMultiply(arrayOfNumbers) {
 // 12.
 function printFibo(n, a, b) {
     if (n <= 0) {
-      return '';
+        return '';
     } else if (n == 1) {
-      return a.toString();
+        return a.toString();
     } else if (n == 2) {
-      return `${a}, ${b}`;
+        return `${a}, ${b}`;
     } else {
-      let nextNum = a + b;
-      return `${printFibo(n-1, b, nextNum)}, ${nextNum}`;
+        let nextNum = a + b;
+        return `${printFibo(n - 1, b, nextNum)}, ${nextNum}`;
     }
-  }
-  
+}
