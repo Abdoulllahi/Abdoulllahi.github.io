@@ -5,5 +5,4 @@ const student = {
     inputNewGrade: function (grade) {
         this.grades.push(grade)
     },
-    computeAverageGrade: () =
 }
