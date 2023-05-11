@@ -36,43 +36,48 @@
             <div class="container">
                 <p>Login to know the status of the ticket</p>
                 <div id="azure-image">
-                    <img src="images/azure ad.png" alt="">
+                    <img src="images/azure_ad.png" alt="">
                 </div>
             </div>
             <div class="login">
-                <form action="">
-                    <div class="container">
-                        <label for="uname"><b>Username or Email</b></label>
-                        <input type="text" placeholder="Enter Username" name="uname" required>
-                        <br>
-                        <label for="psw"><b>Password</b></label>
-                        <input type="password" placeholder="Enter Password" name="psw" required>
-                        <br>
-                        <div><label>
-                                <input type="checkbox" checked="checked" name="remember"> Remember me
-                            </label>
-                            <span class="psw">Forgot <a href="#">password?</a></span>
+                <form action="get">
+                    <div id="form">
+                        <div class="container">
+                            <label for="uname"><b>Username or Email</b></label>
+                            <input type="text" placeholder="Enter Username" id="uname" name="uname" required>
+                            <br>
+                            <label for="psw"><b>Password</b></label>
+                            <input type="password" placeholder="Enter Password" id="psw" name="psw" required>
+                            <br>
+                            <div><label>
+                                    <input type="checkbox" checked="checked" name="remember"> Remember me
+                                </label>
+                                <span class="psw">Forgot <a href="#">password?</a></span>
+                            </div>
+                            <br>
+                            <button type="submit">Login</button>
                         </div>
-                        <br>
-                        <button type="submit">Login</button>
+                        <div class="container" id="submit">
+                            <p>
+                                Login to track your existing support requests. If you have not created a ticket yet then
+                                you
+                                would need to register or create a new ticket to begin.
+                            </p>
+                            <button type="submit">Submit ticket</button>
+                        </div>
                     </div>
                 </form>
-                <div class="container">
-                    <p>
-                        Login to track your existing support requests. If you have not created a ticket yet then you
-                        would need to register or create a new ticket to begin.
-                    </p>
-                    <button type="submit">Submit ticket</button>
-                </div>
             </div>
         </div>
     </main>
     <footer>
         <p>Copyright 2020, All rights reserved</p>
         <div class="validators">
-            <div><a href="http://validator.w3.org/check/referer"><img src="images/w3c-html5-logo.png" alt=""></a></div>
-            <div><a href="http://jigsaw.w3.org/css-validator/check/referer"><img src="images/valid-css-blue.gif"
-                        alt=""></a></div>
+            <div><a href="http://validator.w3.org/check?url=https://abdoulllahi.github.io/assignment3/index.html"><img
+                        src="images/w3c-html5-logo.png" alt=""></a></div>
+            <div><a
+                    href="https://jigsaw.w3.org/css-validator/validator?uri=https://abdoulllahi.github.io/assignment3/index.html"><img
+                        src="images/valid-css-blue.gif" alt=""></a></div>
         </div>
     </footer>
 </body>

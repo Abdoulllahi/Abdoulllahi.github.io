@@ -1,5 +1,5 @@
 function askPassword(ok, fail) {
-    
+
     let password = prompt("Password?", '');
     if (password == "rockstar") ok();
     else fail();
@@ -7,12 +7,14 @@ function askPassword(ok, fail) {
 
 let user = {
     name: "John",
-    loginOk: function() {
+    loginOk: function () {
         alert(`${this.name} logged in`);
     },
-    loginFail: function() {
+    loginFail: function () {
         alert(`${this.name} failed to log in`);
     },
 };
 
-askPassword(user.loginOk(), user.loginFail());
+// When these functions are invoked inside askPassword, the this keyword no longer refers to the user object, causing 
+//the error.
+askPassword(user.loginOk.bind(user), user.loginFail.bind(user));
