@@ -38,7 +38,8 @@ const averageGrade = students.reduce(
     0
   ) / students.length;
 console.log(students)
-console.log(averageGrade)
+console.log(averageGrade
+)
 // const student1 = Object.create(student);
 // student1.firstName = 'John';
 // student1.lastName = 'Smith';
