@@ -2,7 +2,7 @@
  * @ Author: Abdou Lahi DIOP
  * @ Create Time: 2023-05-17 00:03:21
  * @ Modified by: Abdou Lahi DIOP
- * @ Modified time: 2023-05-18 18:16:57
+ * @ Modified time: 2023-05-18 20:37:39
  * @ Description:
  */
 
@@ -61,15 +61,13 @@ function filterNonElderly(event) {
     event.preventDefault();
     const rows = tBody.rows;
     if (elderlyPatientFilter.checked) {
-        for (let i = 0; i < rows.length; i++) {
-            const row = rows[i];
+        for (const row of rows) {
             if (calculateAge(row.cells[4].innerText) < 65) {
                 row.classList.add('no-elder')
             }
         }
     } else {
-        for (let i = 0; i < rows.length; i++) {
-            const row = rows[i];
+        for (const row of rows) {
             row.classList.remove('no-elder');
         }
     }
@@ -84,14 +82,14 @@ function filterNonOutPatients(event) {
     event.preventDefault();
     const rows = tBody.rows;
     if (outPatients.checked) {
-        for (let i = 0; i < rows.length; i++) {
-            if (rows[i].cells[6].innerText == 'No') {
-                rows[i].classList.add('no-out-patient')
+        for (const row of rows) {
+            if (row.cells[6].innerText == 'No') {
+                row.classList.add('no-out-patient')
             }
         }
     } else {
-        for (let i = 0; i < rows.length; i++) {
-            rows[i].classList.remove('no-out-patient')
+        for (const row of rows) {
+            row.classList.remove('no-out-patient')
         }
     }
 } 
