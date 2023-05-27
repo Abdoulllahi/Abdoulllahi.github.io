@@ -1,0 +1,73 @@
+<!--
+ * @ Author: Abdou Lahi DIOP
+ * @ Create Time: 2023-05-22 16:21:41
+ * @ Modified by: Abdou Lahi DIOP
+ * @ Modified time: 2023-05-26 22:35:35
+ * @ Description:
+ -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../style/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../style/welcome.css">
+    <title>Welcome Page</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" id="logout-nav">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#login-form"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a href="" class="navbar-brand">
+                <img src="../images/logo.png" alt="logo" id="logo">
+            </a>
+            <p>Welcome</p>
+            <button id="logout-button" type="button" class="btn btn-primary">Logout</button>
+        </div>
+    </nav>
+    <h1 class="text-center">Product List</h1>
+    <table id="products" class="table bg-primary table-striped">
+        <thead class="table-dark text-center">
+            <tr>
+                <th scope="col">Name</th>
+                <th scope="col">Price</th>
+                <th scope="col">Image</th>
+                <th scope="col">Stock</th>
+                <th scope="col">Actions</th>
+            </tr>
+        </thead>
+        <tbody class="text-center">
+        </tbody>
+    </table>
+
+    <h1 class="text-center">Your shopping cart</h1>
+    <div id="cart-container">
+        <table id="cart" class="table bg-primary table-striped">
+            <thead class="table-dark text-center">
+                <tr>
+                    <th scope="col">Name</th>
+                    <th scope="col">Price</th>
+                    <th scope="col">Quantity</th>
+                    <th scope="col">Total</th>
+                </tr>
+            </thead>
+            <tbody class="text-center">
+                <tr>
+                    <td colspan="4" id="empty-cart-message">There is no item in your shopping cart!!!</td>
+                </tr>
+            </tbody>
+        </table>
+        <button class="empty btn btn-primary">Place Order</button>
+    </div>
+
+    <script src="../js/welcome.js"></script>
+</body>
+
+</html>

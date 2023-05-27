@@ -1,0 +1,35 @@
+/**
+ * @ Author: Abdou Lahi DIOP
+ * @ Create Time: 2023-05-23 17:00:25
+ * @ Modified by: Abdou Lahi DIOP
+ * @ Modified time: 2023-05-26 22:52:39
+ * @ Description:
+ */
+
+#logo {
+    width: 100px;
+}
+
+#logout-nav {
+    height: 100px;
+    box-shadow: 0px 2px 5px #161313;
+}
+
+.table {
+    border: 1px solid black;
+}
+
+.table thead th {
+    border-left: 1px solid #c08484;
+    border-right: 1px solid #c08484;
+}
+
+.table td {
+    border-left: 1px solid #c08484;
+    border-right: 1px solid #c08484;
+    border-top: none !important;
+}
+
+/* .empty {
+    display: none;
+} */

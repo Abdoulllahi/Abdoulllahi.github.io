@@ -1,0 +1,23 @@
+/**
+ * @ Author: Abdou Lahi DIOP
+ * @ Create Time: 2023-05-22 18:19:13
+ * @ Modified by: Abdou Lahi DIOP
+ * @ Modified time: 2023-05-23 16:45:03
+ * @ Description:
+ */
+
+#login-nav {
+    height: 220px;
+    box-shadow: 0px 2px 5px #161313;
+}
+
+#logo {
+    width: 100px;
+}
+
+#welcome-message {
+    padding-top: 50px;
+    text-align: center;
+    display: table;
+    width: 100%
+}
